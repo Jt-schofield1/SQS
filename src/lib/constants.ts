@@ -122,7 +122,7 @@ export const PROCESS_STEPS = [
 export const BEFORE_AFTER_PAIRS = [
   {
     id: 1,
-    before: "/images/before-after/IMG_5419.jpeg",
+    before: "/images/before-after/IMG_5420.jpeg",
     after: "/images/before-after/IMG_5426.jpeg",
     label: "Commercial Parking Lot",
     location: "Waterford, PA",
@@ -143,7 +143,7 @@ export const BEFORE_AFTER_PAIRS = [
   },
   {
     id: 4,
-    before: "/images/before-after/IMG_5420.jpeg",
+    before: "/images/before-after/IMG_5419.jpeg",
     after: "/images/before-after/IMG_5516.jpeg",
     label: "Community Parking Area",
     location: "Meadville, PA",
