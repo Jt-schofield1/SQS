@@ -136,13 +136,6 @@ export const BEFORE_AFTER_PAIRS = [
   },
   {
     id: 3,
-    before: "/images/before-after/IMG_5419.jpeg",
-    after: "/images/before-after/IMG_5516.jpeg",
-    label: "Townhouse Complex",
-    location: "Edinboro, PA",
-  },
-  {
-    id: 4,
     before: "/images/before-after/IMG_5510.jpeg",
     after: "/images/before-after/IMG_5515.jpeg",
     label: "Community Parking Area",
