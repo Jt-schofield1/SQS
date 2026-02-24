@@ -73,9 +73,6 @@ export default function WorkShowcase() {
               >
                 <Image src={img.src} alt={img.alt} fill className="object-cover transition-transform duration-700 group-hover:scale-110" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <div className="absolute inset-x-0 bottom-0 p-3 translate-y-full transition-transform duration-300 group-hover:translate-y-0">
-                  <p className="line-clamp-3 text-xs text-white/80">{img.alt}</p>
-                </div>
                 <div className="absolute inset-0 rounded-lg border border-transparent transition-colors duration-300 group-hover:border-copper/30" />
               </button>
             ))}
@@ -96,7 +93,6 @@ export default function WorkShowcase() {
           </button>
           <div className="relative mx-4 max-h-[85vh] max-w-5xl" onClick={(e) => e.stopPropagation()}>
             <Image src={WORK_IMAGES[lightbox].src} alt={WORK_IMAGES[lightbox].alt} width={1200} height={800} className="max-h-[85vh] w-auto rounded-lg object-contain" sizes="90vw" />
-            <p className="mt-3 text-center text-sm text-muted">{WORK_IMAGES[lightbox].alt}</p>
           </div>
         </div>
       )}

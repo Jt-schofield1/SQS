@@ -86,12 +86,6 @@ function Slider({
           </div>
         </div>
 
-        <div className="absolute top-3 left-3 rounded-full bg-background/80 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white/80 backdrop-blur-sm">Before</div>
-        <div className="absolute top-3 right-3 rounded-full bg-copper/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-sm">After</div>
-      </div>
-      <div className="mt-3 flex items-center justify-between">
-        <span className="text-sm font-medium text-white/80">{label}</span>
-        <span className="text-xs text-muted">{location}</span>
       </div>
     </div>
   );
