@@ -56,7 +56,7 @@ export default function AboutStory() {
                 blocks water, vehicle fluids, and damaging UV rays.
                 Sealcoating can increase the life of your asphalt by{" "}
                 <span className="font-semibold text-copper-light">
-                  20&ndash;30 years
+                  20+ years
                 </span>{" "}
                 when done regularly.
               </p>

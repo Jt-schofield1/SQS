@@ -57,7 +57,7 @@ export default function CTABanner() {
           <span className="text-gradient-copper">Your Investment?</span>
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-base text-white/70 sm:text-lg">
-          Sealcoating can extend the life of your asphalt by 20&ndash;30 years.
+          Sealcoating can extend the life of your asphalt by 20+ years.
           Get your free estimate today.
         </p>
         <a
