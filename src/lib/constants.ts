@@ -46,7 +46,7 @@ export const SERVICES = [
     fullDesc:
       "Cracks in your asphalt driveway or parking lot invite water, dirt, and debris to seep in, which can lead to further damage and shorten the life of your pavement. We use a hot rubberized crack filler to seal and protect fillable cracks. First, we thoroughly clean out any debris to ensure a strong bond. Then, we apply the crack filler at 400°F, creating a durable, water-resistant 4-inch band over the crack.",
     icon: "Wrench",
-    image: "/images/work/IMG_6624.jpeg",
+    image: "/images/work/IMG_5471.jpeg",
     highlights: [
       "Hot rubberized crack filler",
       "Applied at 400°F",
@@ -63,7 +63,7 @@ export const SERVICES = [
     fullDesc:
       "Using our professional LineLazer equipment, we can paint crisp, clean lines with precision. We will lay out the parking lot to fit the needs of your business, ensuring proper traffic flow, ADA compliance markings, and a professional appearance that makes a great first impression.",
     icon: "Ruler",
-    image: "/images/work/IMG_5471.jpeg",
+    image: "/images/work/IMG_6624.jpeg",
     highlights: [
       "Professional LineLazer equipment",
       "Custom parking lot layouts",
