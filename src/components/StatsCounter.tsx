@@ -13,17 +13,19 @@ function AnimatedNumber({
   prefix,
   label,
   triggered,
+  isText,
 }: {
   value: number;
   suffix: string;
   prefix: string;
   label: string;
   triggered: boolean;
+  isText?: boolean;
 }) {
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
-    if (!triggered) return;
+    if (!triggered || isText) return;
     const obj = { val: 0 };
     gsap.to(obj, {
       val: value,
@@ -31,14 +33,24 @@ function AnimatedNumber({
       ease: "power2.out",
       onUpdate: () => setDisplay(Math.round(obj.val)),
     });
-  }, [triggered, value]);
+  }, [triggered, value, isText]);
 
   return (
     <div className="text-center">
       <div className="font-display text-4xl font-bold tracking-tight text-copper-light sm:text-5xl lg:text-6xl">
-        {prefix}
-        {triggered ? display : 0}
-        {suffix}
+        {isText ? (
+          <span className="flex items-center justify-center gap-2">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="inline-block sm:h-10 sm:w-10 lg:h-12 lg:w-12">
+              <path d="M20 6L9 17l-5-5" className={triggered ? "animate-[draw-check_0.6s_ease-out_0.5s_forwards]" : ""} style={{ strokeDasharray: 30, strokeDashoffset: triggered ? 0 : 30 }} />
+            </svg>
+          </span>
+        ) : (
+          <>
+            {prefix}
+            {triggered ? display : 0}
+            {suffix}
+          </>
+        )}
       </div>
       <div className="mt-2 text-sm text-muted sm:text-base">{label}</div>
     </div>
@@ -84,6 +96,7 @@ export default function StatsCounter() {
               prefix={stat.prefix}
               label={stat.label}
               triggered={triggered}
+              isText={"isText" in stat && Boolean(stat.isText)}
             />
           ))}
         </div>

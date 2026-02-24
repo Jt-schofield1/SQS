@@ -219,10 +219,10 @@ export const FAQS = [
 ] as const;
 
 export const STATS = [
-  { value: 30, suffix: "+", label: "Years Added to Asphalt Life", prefix: "" },
+  { value: 20, suffix: "+", label: "Years Added to Asphalt Life", prefix: "" },
   { value: 3, suffix: " Yrs", label: "Protection Per Coat", prefix: "Up to " },
-  { value: 48, suffix: " Hrs", label: "Dry Time", prefix: "" },
-  { value: 400, suffix: "°F", label: "Crack Filler Temperature", prefix: "" },
+  { value: 24, suffix: " Hrs", label: "Dry Time", prefix: "" },
+  { value: 0, suffix: "", label: "Petroleum-Based Emulsion Sealer", prefix: "", isText: true },
 ] as const;
 
 export const NAV_LINKS = [
