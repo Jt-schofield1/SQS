@@ -15,45 +15,44 @@ export default function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 0.3 });
+      const tl = gsap.timeline({ delay: 0.2 });
 
-      tl.from(overlayRef.current, {
-        opacity: 0,
+      tl.to(overlayRef.current, {
+        opacity: 1,
         duration: 1.2,
         ease: "power2.out",
       })
-        .from(
+        .to(
           headlineRef.current,
           {
-            y: 60,
-            opacity: 0,
+            y: 0,
+            opacity: 1,
             duration: 1,
             ease: "power3.out",
           },
           "-=0.4"
         )
-        .from(
+        .to(
           subtextRef.current,
           {
-            y: 40,
-            opacity: 0,
+            y: 0,
+            opacity: 1,
             duration: 0.8,
             ease: "power3.out",
           },
           "-=0.5"
         )
-        .from(
+        .to(
           ctaRef.current?.children ? Array.from(ctaRef.current.children) : [],
           {
-            y: 30,
-            opacity: 0,
+            y: 0,
+            opacity: 1,
             duration: 0.6,
             stagger: 0.15,
             ease: "power3.out",
           },
           "-=0.3"
-        )
-;
+        );
     }, sectionRef);
 
     return () => ctx.revert();
@@ -79,7 +78,7 @@ export default function Hero() {
 
       <div
         ref={overlayRef}
-        className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6"
+        className="relative z-10 mx-auto max-w-5xl px-4 text-center opacity-0 sm:px-6"
       >
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-copper/30 bg-copper/10 px-4 py-2 text-xs font-medium uppercase tracking-widest text-copper-light sm:text-sm">
           <span className="h-1.5 w-1.5 rounded-full bg-copper-light animate-pulse" />
@@ -88,7 +87,7 @@ export default function Hero() {
 
         <h1
           ref={headlineRef}
-          className="font-display text-4xl font-bold uppercase leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+          className="translate-y-[60px] font-display text-4xl font-bold uppercase leading-[1.1] tracking-tight opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
         >
           Protecting Northwest PA&apos;s Asphalt,{" "}
           <span className="text-gradient-copper">One Surface at a Time</span>
@@ -96,13 +95,13 @@ export default function Hero() {
 
         <p
           ref={subtextRef}
-          className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg md:text-xl"
+          className="mx-auto mt-6 max-w-2xl translate-y-[40px] text-base leading-relaxed text-white/70 opacity-0 sm:text-lg md:text-xl"
         >
           Professional sealcoating, crack filling, and line painting that
           restores and protects your asphalt investment for years to come.
         </p>
 
-        <div ref={ctaRef} className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <div ref={ctaRef} className="mt-10 flex flex-col items-center gap-4 [&>*]:translate-y-[30px] [&>*]:opacity-0 sm:flex-row sm:justify-center">
           <a
             href="#contact"
             className="group flex items-center gap-2 rounded-full bg-copper px-8 py-4 text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-copper-light hover:shadow-[0_0_30px_rgba(184,118,62,0.4)] sm:text-base"

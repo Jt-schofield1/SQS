@@ -12,14 +12,22 @@ import { SERVICES } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Our Services | Sealcoating, Crack Filling & Line Painting",
   description:
-    "Professional asphalt sealcoating, hot rubberized crack filling, and parking lot line painting services in Waterford, PA and Northwest Pennsylvania. Get a free estimate.",
+    "Professional asphalt sealcoating, hot rubberized crack filling, and parking lot line painting in Waterford, Erie, Meadville, Edinboro & all of Erie and Crawford County, PA. Free estimates.",
+  keywords: [
+    "sealcoating services Waterford PA",
+    "crack filling Erie PA",
+    "line painting Meadville PA",
+    "driveway sealing near me",
+    "parking lot sealcoating Northwest PA",
+    "asphalt maintenance Erie County",
+  ],
   alternates: {
     canonical: "https://stonequarrysealing.com/services",
   },
   openGraph: {
     title: "Our Services | Stone Quarry Sealing",
     description:
-      "Professional asphalt sealcoating, crack filling, and line painting in Northwest PA.",
+      "Professional asphalt sealcoating, crack filling, and line painting serving Erie County, Crawford County & Northwest PA.",
     images: [
       {
         url: "/images/work/IMG_5471.jpeg",
@@ -37,6 +45,19 @@ const iconMap = {
   Ruler,
 };
 
+const servedAreas = [
+  "Waterford, PA",
+  "Erie, PA",
+  "Meadville, PA",
+  "Edinboro, PA",
+  "Union City, PA",
+  "Corry, PA",
+  "Cambridge Springs, PA",
+  "Girard, PA",
+  "North East, PA",
+  "Fairview, PA",
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -46,9 +67,23 @@ const jsonLd = {
     name: service.title,
     description: service.fullDesc,
     provider: {
-      "@type": "LocalBusiness",
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://stonequarrysealing.com/#business",
       name: "Stone Quarry Sealing",
+      telephone: "+1-814-722-5081",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Waterford",
+        addressRegion: "PA",
+        postalCode: "16441",
+        addressCountry: "US",
+      },
     },
+    areaServed: servedAreas.map((city) => ({
+      "@type": "City",
+      name: city,
+    })),
+    serviceType: service.title,
   })),
 };
 

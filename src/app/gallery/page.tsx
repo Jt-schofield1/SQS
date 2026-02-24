@@ -5,14 +5,21 @@ import BeforeAfterSection from "@/components/BeforeAfterSlider";
 export const metadata: Metadata = {
   title: "Project Gallery | Before & After Sealcoating Work",
   description:
-    "Browse before and after photos of our asphalt sealcoating, crack filling, and line painting projects across Northwest Pennsylvania. See the Stone Quarry Sealing difference.",
+    "Browse before and after photos of asphalt sealcoating, crack filling, and line painting projects in Waterford, Erie, Meadville & across Erie and Crawford County, PA.",
+  keywords: [
+    "sealcoating before and after",
+    "asphalt sealing results",
+    "driveway sealing photos Waterford PA",
+    "parking lot sealcoating Erie PA",
+    "Stone Quarry Sealing gallery",
+  ],
   alternates: {
     canonical: "https://stonequarrysealing.com/gallery",
   },
   openGraph: {
     title: "Project Gallery | Stone Quarry Sealing",
     description:
-      "Before and after photos of our sealcoating work in Northwest PA.",
+      "Before and after photos of sealcoating projects across Erie County, Crawford County & Northwest PA.",
     images: [
       {
         url: "/images/work/IMG_5471.jpeg",

@@ -224,4 +224,13 @@ body {
     opacity: 1 !important;
     transform: none !important;
   }
+  [aria-label="Hero"] * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+noscript ~ main [aria-label="Hero"] * {
+  opacity: 1 !important;
+  transform: none !important;
 }

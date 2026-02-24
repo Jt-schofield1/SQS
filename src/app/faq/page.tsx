@@ -5,14 +5,22 @@ import { FAQS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "FAQ | Asphalt Sealcoating Questions Answered",
   description:
-    "Find answers to common questions about asphalt sealcoating, crack filling, application process, dry times, and more. Stone Quarry Sealing serves Northwest Pennsylvania.",
+    "Find answers to common questions about asphalt sealcoating, crack filling, dry times, and more from Stone Quarry Sealing. Serving Waterford, Erie, Meadville & all of Erie and Crawford County, PA.",
+  keywords: [
+    "sealcoating FAQ",
+    "asphalt sealing questions",
+    "crack filling FAQ",
+    "driveway sealing how long",
+    "sealcoating Waterford PA",
+    "asphalt maintenance Erie County",
+  ],
   alternates: {
     canonical: "https://stonequarrysealing.com/faq",
   },
   openGraph: {
     title: "FAQ | Stone Quarry Sealing",
     description:
-      "Common questions about sealcoating, crack filling, and asphalt maintenance answered.",
+      "Common questions about sealcoating, crack filling, and asphalt maintenance in Northwest PA — answered by local experts.",
   },
 };
 
