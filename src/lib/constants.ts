@@ -29,7 +29,7 @@ export const SERVICES = [
     fullDesc:
       "Your driveway or parking lot is constantly exposed to harsh elements like water, oil, and UV rays, all of which can cause serious damage over time. Our high-quality asphalt emulsion sealer forms a protective, flat-black layer that shields your surface from these threats. Beyond protection, sealcoating also restores the deep black appearance of your asphalt, improving curb appeal and giving it a clean, well-maintained look.",
     icon: "Paintbrush",
-    image: "/images/work/IMG_5471.jpeg",
+    image: "/images/work/IMG_5427.jpeg",
     highlights: [
       "Polymer seal coat formula",
       "Dry to touch in 24–48 hours",
@@ -63,7 +63,7 @@ export const SERVICES = [
     fullDesc:
       "Using our professional LineLazer equipment, we can paint crisp, clean lines with precision. We will lay out the parking lot to fit the needs of your business, ensuring proper traffic flow, ADA compliance markings, and a professional appearance that makes a great first impression.",
     icon: "Ruler",
-    image: "/images/work/IMG_5427.jpeg",
+    image: "/images/work/IMG_5471.jpeg",
     highlights: [
       "Professional LineLazer equipment",
       "Custom parking lot layouts",
